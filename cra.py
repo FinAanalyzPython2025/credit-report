@@ -32,28 +32,48 @@ def credit_report():
             grouped1 = df.groupby(['accountType', 'memberShortName'])[['highCreditAmount', 'emiAmount']].sum().reset_index()
         except Exception as e:
             return jsonify({"error": "Error processing accounts section", "details": str(e)}), 500
+        
+        # ------------------------ BASIC DETAILS ---------------------------
+        from basic_details import basic_details
+        details = basic_details(json_data)
 
         # ------------------------ ENQUIRIES SECTION ------------------------
         try:
-            enquiries = json_data['data']['credit_report'][0].get('enquiries', [])
-            if enquiries:
-                enquiry_df = pd.DataFrame(enquiries)
-                enquiry_df['enquiryAmount'] = pd.to_numeric(enquiry_df.get('enquiryAmount', 0), errors='coerce')
-
-                grouped_enquiry = enquiry_df.groupby(['memberShortName', 'enquiryPurpose'])['enquiryAmount'].sum().reset_index()
-            else:
-                enquiry_df = pd.DataFrame()
-                grouped_enquiry = pd.DataFrame()
+            from enquiries import extract_enquiry_data
+            enq_data = extract_enquiry_data(json_data)
+            
+        except Exception as e:
+            return jsonify({"error": "Error processing enquiries section", "details": str(e)}), 500
+        
+        # ------------------------ SECURED LOANS AND COLLATERAL SECTION ------------------------
+        try:
+            from secured_loans import secured_loans
+            sec_loan_data = secured_loans(json_data)
+            
         except Exception as e:
             return jsonify({"error": "Error processing enquiries section", "details": str(e)}), 500
 
-        # Convert DataFrames to JSON serializable format
-        return jsonify({
-            "grouped_high_credit": grouped.to_dict(orient='records'),
-            "grouped_high_credit_emi": grouped1.to_dict(orient='records'),
-            "enquiry_data": enquiry_df.to_dict(orient='records'),
-            "grouped_enquiry": grouped_enquiry.to_dict(orient='records')
-        }), 200
+          
+        df = pd.DataFrame(sec_loan_data[0])
+        df_active_loans = df[df["Status"] == "Active"]
+        active_loans = df_active_loans.to_dict(orient='records')
+        # print("Credit Facilities : ","\n",df_active_loans)
+
+        df_closed_loans = df[df["Status"] == "Closed"]
+        closed_loans = df_closed_loans.to_dict(orient='records')
+
+        df_enq_data = pd.DataFrame(enq_data)
+        # print("Enquiries : ","\n",df_enq_data)
+
+        df_sec_loan_data = pd.DataFrame(sec_loan_data[1])
+        # print("Secured Loan : ","\n",df_sec_loan_data)
+
+        # ------------------------ Loan Appraisal Scorecard ------------------------
+
+        from loan_appraisal_scorecard import loan_appraisal_dcorecard
+        params = loan_appraisal_dcorecard(json_data)
+        
+        return str(sum(params.values()))
 
     except Exception as e:
         return jsonify({
@@ -61,3 +81,6 @@ def credit_report():
             "message": str(e),
             "trace": traceback.format_exc()
         }), 500
+
+if __name__ == '__main__':
+    app.run(debug=True)
