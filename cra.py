@@ -96,7 +96,8 @@ def credit_report():
         print('secured_loans',sec_loan_data[1])
         print('closed_loans',closed_loans)
         print('scorecard',df_scorecard)
-        return [details, enq_data, active_loans, sec_loan_data[1], closed_loans, scorecard]
+
+        return [details, {"Credit Facilities Overview":active_loans}, {"Enquiry Details (Past 6 Months)":enq_data}, {"Secured Loans & Collateral Esmate": sec_loan_data[1]}, {"Closed Loan Accounts (Sample Highlights)":closed_loans}, {"Loan Appraisal Scorecard":scorecard}]
 
     except Exception as e:
         return jsonify({
