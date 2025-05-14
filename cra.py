@@ -69,9 +69,15 @@ def credit_report():
 
         # ------------------------ Loan Appraisal Scorecard ------------------------
 
+<<<<<<< HEAD
         from loan_appraisal_scorecard import loan_appraisal_scorecard
         params = loan_appraisal_scorecard(json_data)
         print("params \n\n\n\n",params)
+=======
+        from loan_appraisal_scorecard import loan_appraisal_dcorecard
+        params = loan_appraisal_dcorecard(json_data)
+        
+>>>>>>> 53328b068d34b9a179d687a76f3ba40e66eb1680
         return str(sum(params.values()))
 
     except Exception as e:

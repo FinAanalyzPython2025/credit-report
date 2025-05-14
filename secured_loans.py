@@ -57,7 +57,11 @@ def secured_loans(data):
     #----------------------------- CALCULATE SECURED LOANS AND COLLATERAL ----------------------------------
 
     try:
+<<<<<<< HEAD
         df_secured_loans = df[df["Loan Type"].isin(["Gold Loan","Property Loan","Housing Loan","Auto Loan"])].copy()
+=======
+        df_secured_loans = df[df["Loan Type"].isin(["Gold Loan","Property Loan","Housing Loan","Auto Loan"])]
+>>>>>>> 53328b068d34b9a179d687a76f3ba40e66eb1680
 
         asset_values = []
         for loan_value in df_secured_loans["Loan Sanctioned (INR)"].to_list():
@@ -66,8 +70,13 @@ def secured_loans(data):
                 lower_asset_value = round((int(loan_value) / 0.90), 2)
                 asset_value = f"{lower_asset_value} - {upper_asset_value}"
                 asset_values.append(asset_value)
+<<<<<<< HEAD
         print(asset_values)
         df_secured_loans["Approximate Asset Value (Est.)"] = asset_values
+=======
+
+        df_secured_loans[" Approximate Asset Value (Est.)"] = asset_values
+>>>>>>> 53328b068d34b9a179d687a76f3ba40e66eb1680
 
         df_secured_loans_dictionary = df_secured_loans.to_dict(orient="records")
         
