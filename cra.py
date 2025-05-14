@@ -1,6 +1,5 @@
 import json
 import pandas as pd
-import json
 from flask import Flask,request, jsonify
 import traceback
 
@@ -70,24 +69,16 @@ def credit_report():
 
         # ------------------------ Loan Appraisal Scorecard ------------------------
 
+<<<<<<< HEAD
+        from loan_appraisal_scorecard import loan_appraisal_scorecard
+        params = loan_appraisal_scorecard(json_data)
+        print("params \n\n\n\n",params)
+=======
         from loan_appraisal_scorecard import loan_appraisal_dcorecard
         params = loan_appraisal_dcorecard(json_data)
-        df_scorecard = pd.DataFrame(params)
-
-        # ------------------------ Craete PDF ------------------------
-        from create_pdf import create_pdf_with_dataframes
-
-        df_info = [
-            ("Credit Facilities Overview", df_active_loans, "This table contains active loans."),
-            (" Enquiry Details (Past 6 Months) ", df_enq_data, "This table shows enquiries by customer."),
-            ("Secured Loans & Collateral Esmate ", df_sec_loan_data, "This table shows secured loans."),
-            ("Closed Loan Accounts (Sample Highlights) ", df_closed_loans, "Over 60 gold loans were historically opened and closed – mostly timely and smooth closure, reflecting short-term liquidity use. "),
-            ("Loan Appraisal Scorecard", df_scorecard, "This table shows enquiries by customer.")
-        ]
-
-        op = create_pdf_with_dataframes(df_info, output_path= r'./credit-report/')
         
-        return op
+>>>>>>> 53328b068d34b9a179d687a76f3ba40e66eb1680
+        return str(sum(params.values()))
 
     except Exception as e:
         return jsonify({

@@ -20,6 +20,7 @@ def secured_loans(data):
                 loans_info["Loan Type"] = loan["accountType"]
                 loans_info["Bank"] = loan["memberShortName"]
                 loans_info["Loan Sanctioned (INR)"] = loan["highCreditAmount"]
+                loans_info["Current Balance"] = loan["currentBalance"]
                 loans_info["Status"] = loan["dateClosed"]
                 loans_list.append(loans_info)
 
@@ -57,8 +58,6 @@ def secured_loans(data):
 
     try:
         df_secured_loans = df[df["Loan Type"].isin(["Gold Loan","Property Loan","Housing Loan","Auto Loan"])].copy()
-      
-        # df.loc[df["Loan Type"] == "Secured", " Approximate Asset Value (Est.)"] = asset_values
 
         asset_values = []
         for loan_value in df_secured_loans["Loan Sanctioned (INR)"].to_list():
@@ -67,8 +66,8 @@ def secured_loans(data):
                 lower_asset_value = round((int(loan_value) / 0.90), 2)
                 asset_value = f"{lower_asset_value} - {upper_asset_value}"
                 asset_values.append(asset_value)
-
-        df_secured_loans[" Approximate Asset Value (Est.)"] = asset_values
+        
+        df_secured_loans["Approximate Asset Value (Est.)"] = asset_values
 
         df_secured_loans_dictionary = df_secured_loans.to_dict(orient="records")
         
@@ -76,4 +75,3 @@ def secured_loans(data):
     
     except Exception as e:
         return jsonify({"error": "Error calculating secured loans and collateral in secured loans section", "details": str(e)}), 500
-    
