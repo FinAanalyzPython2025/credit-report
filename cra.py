@@ -1,6 +1,5 @@
 import json
 import pandas as pd
-import json
 from flask import Flask,request, jsonify
 import traceback
 
