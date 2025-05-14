@@ -20,7 +20,7 @@ def secured_loans(data):
                 loans_info["Loan Type"] = loan["accountType"]
                 loans_info["Bank"] = loan["memberShortName"]
                 loans_info["Loan Sanctioned (INR)"] = loan["highCreditAmount"]
-                loans_info["Current Balance"] = loan["currentBalance"]
+                # loans_info["Current Balance (INR)"] = loan["currentBalance"]
                 loans_info["Status"] = loan["dateClosed"]
                 loans_list.append(loans_info)
 
@@ -67,7 +67,7 @@ def secured_loans(data):
                 asset_value = f"{lower_asset_value} - {upper_asset_value}"
                 asset_values.append(asset_value)
         
-        df_secured_loans["Approximate Asset Value (Est.)"] = asset_values
+        df_secured_loans["Approx Asset Value (Est.)"] = asset_values
 
         df_secured_loans_dictionary = df_secured_loans.to_dict(orient="records")
         

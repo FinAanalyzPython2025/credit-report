@@ -1,5 +1,6 @@
 import json
 import pandas as pd
+import json
 from flask import Flask,request, jsonify
 import traceback
 
@@ -69,16 +70,33 @@ def credit_report():
 
         # ------------------------ Loan Appraisal Scorecard ------------------------
 
-<<<<<<< HEAD
         from loan_appraisal_scorecard import loan_appraisal_scorecard
         params = loan_appraisal_scorecard(json_data)
-        print("params \n\n\n\n",params)
-=======
-        from loan_appraisal_scorecard import loan_appraisal_dcorecard
-        params = loan_appraisal_dcorecard(json_data)
-        
->>>>>>> 53328b068d34b9a179d687a76f3ba40e66eb1680
-        return str(sum(params.values()))
+        df_scorecard = pd.DataFrame(list(params.items()), columns= ['Metric', 'Value'])
+        scorecard = df_scorecard.to_dict(orient='records')
+
+        # ------------------------ Craete PDF ------------------------
+
+        # from create_pdf import create_pdf_with_reportlab
+
+        # op = create_pdf_with_reportlab([
+        #     ("Credit Facilities Overview", df_active_loans, "This table contains active loans."),
+        #     (" Enquiry Details (Past 6 Months) ", df_enq_data, "This table shows enquiries by customer."),
+        #     ("Secured Loans & Collateral Esmate ", df_sec_loan_data, "This table shows secured loans."),
+        #     ("Closed Loan Accounts (Sample Highlights) ", df_closed_loans, "Over 60 gold loans were historically opened and closed , mostly timely and smooth closure, reflecting short-term liquidity use. "),
+        #     ("Loan Appraisal Scorecard", df_scorecard, "This table shows enquiries by customer.")
+        # ])
+
+        # from pdf_fomat import generate_credit_report_pdf
+
+        # op = generate_credit_report_pdf('credit-report.pdf',df_active_loans,df_enq_data,None,df_sec_loan_data,df_closed_loans,df_scorecard)
+        print('Deyails', details)
+        print('enq_data', enq_data)
+        print('active_loans',active_loans)
+        print('secured_loans',sec_loan_data[1])
+        print('closed_loans',closed_loans)
+        print('scorecard',df_scorecard)
+        return [details, enq_data, active_loans, sec_loan_data[1], closed_loans, scorecard]
 
     except Exception as e:
         return jsonify({

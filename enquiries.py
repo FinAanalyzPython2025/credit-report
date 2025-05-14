@@ -54,13 +54,6 @@ def extract_enquiry_data(json_data):
         df = df[['Date', 'Institution', 'Purpose', 'Amount(INR)']]
         # print("Mapped and Reordered DataFrame:\n", df)
 
-<<<<<<< HEAD
-        return df
-
-    except Exception as e:
-        print(traceback.format_exc())
-        return jsonify({"error": "Error processing enquiries section", "details": str(e)}), 500
-=======
         enq_dict = df.to_dict(orient="records")
 
         return enq_dict
@@ -68,4 +61,3 @@ def extract_enquiry_data(json_data):
     except Exception as e:
         print(traceback.format_exc())
         return jsonify({"error": "Error processing enquiries section", "details": str(e)}), 500
->>>>>>> 53328b068d34b9a179d687a76f3ba40e66eb1680
