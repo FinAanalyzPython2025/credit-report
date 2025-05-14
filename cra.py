@@ -72,8 +72,22 @@ def credit_report():
 
         from loan_appraisal_scorecard import loan_appraisal_dcorecard
         params = loan_appraisal_dcorecard(json_data)
+        df_scorecard = pd.DataFrame(params)
+
+        # ------------------------ Craete PDF ------------------------
+        from create_pdf import create_pdf_with_dataframes
+
+        df_info = [
+            ("Credit Facilities Overview", df_active_loans, "This table contains active loans."),
+            (" Enquiry Details (Past 6 Months) ", df_enq_data, "This table shows enquiries by customer."),
+            ("Secured Loans & Collateral Esmate ", df_sec_loan_data, "This table shows secured loans."),
+            ("Closed Loan Accounts (Sample Highlights) ", df_closed_loans, "Over 60 gold loans were historically opened and closed – mostly timely and smooth closure, reflecting short-term liquidity use. "),
+            ("Loan Appraisal Scorecard", df_scorecard, "This table shows enquiries by customer.")
+        ]
+
+        op = create_pdf_with_dataframes(df_info, output_path= r'./credit-report/')
         
-        return str(sum(params.values()))
+        return op
 
     except Exception as e:
         return jsonify({

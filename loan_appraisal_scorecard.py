@@ -8,7 +8,7 @@ from flask import jsonify
 # with open(r"D:\11_August_Chatbot_Faiss_Env\BSA_Advance\BSA (2)\Credit_Report_Remote_Repository\credit-report\joshykg-credit-report.json",'r') as file:
 #     data = json.load(file)
 
-def loan_appraisal_dcorecard(data):
+def loan_appraisal_scorecard(data):
     #----------------------------------------- FIND ALL LOANS ---------------------------------------
 
     try:
