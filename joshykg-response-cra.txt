@@ -1,0 +1,327 @@
+[
+    {
+        "credit_score": "752",
+        "dob": "1979-03-21",
+        "gender": "male",
+        "mobile": "9745522877",
+        "name": "JOSHY K G",
+        "pan": "AOEPG4524M"
+    },
+    {
+        "Credit Facilities Overview": [
+            {
+                "Bank": "SBI",
+                "Loan Sanctioned (INR)": 800000.0,
+                "Loan Type": "Auto Loan (Personal)",
+                "Status": "Active"
+            },
+            {
+                "Bank": "HDFC BANK",
+                "Loan Sanctioned (INR)": 302592.0,
+                "Loan Type": "Credit Card",
+                "Status": "Active"
+            },
+            {
+                "Bank": "ICICI BANK",
+                "Loan Sanctioned (INR)": 46114.0,
+                "Loan Type": "Credit Card",
+                "Status": "Active"
+            },
+            {
+                "Bank": "BOB",
+                "Loan Sanctioned (INR)": 556000.0,
+                "Loan Type": "Gold Loan",
+                "Status": "Active"
+            },
+            {
+                "Bank": "MANAPPURAM",
+                "Loan Sanctioned (INR)": 309027.0,
+                "Loan Type": "Gold Loan",
+                "Status": "Active"
+            },
+            {
+                "Bank": "AXIS BANK",
+                "Loan Sanctioned (INR)": 2645299.0,
+                "Loan Type": "Housing Loan",
+                "Status": "Active"
+            },
+            {
+                "Bank": "AVANSE FIN",
+                "Loan Sanctioned (INR)": 171100.0,
+                "Loan Type": "Personal Loan",
+                "Status": "Active"
+            },
+            {
+                "Bank": "AXIS BANK",
+                "Loan Sanctioned (INR)": 2000000.0,
+                "Loan Type": "Personal Loan",
+                "Status": "Active"
+            },
+            {
+                "Bank": "HDFC BANK",
+                "Loan Sanctioned (INR)": 464855.0,
+                "Loan Type": "Personal Loan",
+                "Status": "Active"
+            },
+            {
+                "Bank": "KOTAK BANK",
+                "Loan Sanctioned (INR)": 307930.0,
+                "Loan Type": "Personal Loan",
+                "Status": "Active"
+            },
+            {
+                "Bank": "AXIS BANK",
+                "Loan Sanctioned (INR)": 1858341.0,
+                "Loan Type": "Property Loan",
+                "Status": "Active"
+            }
+        ]
+    },
+    {
+        "Enquiry Details (Past 6 Months)": [
+            {
+                "Amount(INR)": "2000000",
+                "Date": "2024-09-26",
+                "Institution": "AXIS BANK",
+                "Purpose": "PERSONAL LOAN"
+            },
+            {
+                "Amount(INR)": "500000",
+                "Date": "2024-08-19",
+                "Institution": "KOTAK BANK",
+                "Purpose": "PERSONAL LOAN"
+            },
+            {
+                "Amount(INR)": "723000",
+                "Date": "2024-03-01",
+                "Institution": "AXIS BANK",
+                "Purpose": "PERSONAL LOAN"
+            },
+            {
+                "Amount(INR)": "600000",
+                "Date": "2023-05-02",
+                "Institution": "AXIS BANK",
+                "Purpose": "PERSONAL LOAN"
+            },
+            {
+                "Amount(INR)": "800000",
+                "Date": "2023-04-19",
+                "Institution": "SBI",
+                "Purpose": "AUTO LOAN"
+            },
+            {
+                "Amount(INR)": "500000",
+                "Date": "2023-04-18",
+                "Institution": "SBI",
+                "Purpose": "AUTO LOAN"
+            },
+            {
+                "Amount(INR)": "2500000",
+                "Date": "2023-02-25",
+                "Institution": "AXIS BANK",
+                "Purpose": "HOUSING LOAN"
+            },
+            {
+                "Amount(INR)": "1500000",
+                "Date": "2023-01-18",
+                "Institution": "AXIS BANK",
+                "Purpose": "PERSONAL LOAN"
+            },
+            {
+                "Amount(INR)": "1000",
+                "Date": "2023-01-15",
+                "Institution": "RBL BANK LTD",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "171000",
+                "Date": "2023-01-13",
+                "Institution": "NDXP",
+                "Purpose": "EDUCATIONAL LOAN"
+            },
+            {
+                "Amount(INR)": "2500000",
+                "Date": "2022-10-26",
+                "Institution": "AXIS BANK",
+                "Purpose": "HOUSING LOAN"
+            },
+            {
+                "Amount(INR)": "2500000",
+                "Date": "2022-09-06",
+                "Institution": "AXIS BANK",
+                "Purpose": "HOUSING LOAN"
+            },
+            {
+                "Amount(INR)": "4000000",
+                "Date": "2022-05-18",
+                "Institution": "AXIS BANK",
+                "Purpose": "HOUSING LOAN"
+            }
+        ]
+    },
+    {
+        "Secured Loans & Collateral Esmate": [
+            {
+                "Approx Asset Value (Est.)": "617777.78 - 654117.65",
+                "Bank": "BOB",
+                "Loan Sanctioned (INR)": 556000.0,
+                "Loan Type": "Gold Loan",
+                "Status": "Active"
+            },
+            {
+                "Approx Asset Value (Est.)": "27777.78 - 29411.76",
+                "Bank": "FEDERAL BANK",
+                "Loan Sanctioned (INR)": 25000.0,
+                "Loan Type": "Gold Loan",
+                "Status": "Closed"
+            },
+            {
+                "Approx Asset Value (Est.)": "343363.33 - 363561.18",
+                "Bank": "MANAPPURAM",
+                "Loan Sanctioned (INR)": 309027.0,
+                "Loan Type": "Gold Loan",
+                "Status": "Active"
+            },
+            {
+                "Approx Asset Value (Est.)": "14542665.56 - 15398116.47",
+                "Bank": "MANAPPURAM",
+                "Loan Sanctioned (INR)": 13088399.0,
+                "Loan Type": "Gold Loan",
+                "Status": "Closed"
+            },
+            {
+                "Approx Asset Value (Est.)": "2939221.11 - 3112116.47",
+                "Bank": "AXIS BANK",
+                "Loan Sanctioned (INR)": 2645299.0,
+                "Loan Type": "Housing Loan",
+                "Status": "Active"
+            },
+            {
+                "Approx Asset Value (Est.)": "894444.44 - 947058.82",
+                "Bank": "FEDERAL BANK",
+                "Loan Sanctioned (INR)": 805000.0,
+                "Loan Type": "Housing Loan",
+                "Status": "Closed"
+            },
+            {
+                "Approx Asset Value (Est.)": "2064823.33 - 2186283.53",
+                "Bank": "AXIS BANK",
+                "Loan Sanctioned (INR)": 1858341.0,
+                "Loan Type": "Property Loan",
+                "Status": "Active"
+            }
+        ]
+    },
+    {
+        "Closed Loan Accounts (Sample Highlights)": [
+            {
+                "Bank": "PNB",
+                "Loan Sanctioned (INR)": 950000.0,
+                "Loan Type": "Auto Loan (Personal)",
+                "Status": "Closed"
+            },
+            {
+                "Bank": "CANARA BANK",
+                "Loan Sanctioned (INR)": 346000.0,
+                "Loan Type": "Business Loan – Priority Sector – Agriculture",
+                "Status": "Closed"
+            },
+            {
+                "Bank": "BAJAJ FIN LTD",
+                "Loan Sanctioned (INR)": 167469.0,
+                "Loan Type": "Consumer Loan",
+                "Status": "Closed"
+            },
+            {
+                "Bank": "CITICORP FINANCE",
+                "Loan Sanctioned (INR)": 29000.0,
+                "Loan Type": "Consumer Loan",
+                "Status": "Closed"
+            },
+            {
+                "Bank": "FEDERAL BANK",
+                "Loan Sanctioned (INR)": 25000.0,
+                "Loan Type": "Gold Loan",
+                "Status": "Closed"
+            },
+            {
+                "Bank": "MANAPPURAM",
+                "Loan Sanctioned (INR)": 13088399.0,
+                "Loan Type": "Gold Loan",
+                "Status": "Closed"
+            },
+            {
+                "Bank": "FEDERAL BANK",
+                "Loan Sanctioned (INR)": 805000.0,
+                "Loan Type": "Housing Loan",
+                "Status": "Closed"
+            },
+            {
+                "Bank": "AXIS BANK",
+                "Loan Sanctioned (INR)": 11000000.0,
+                "Loan Type": "Personal Loan",
+                "Status": "Closed"
+            },
+            {
+                "Bank": "CITICORP FINANCE",
+                "Loan Sanctioned (INR)": 74800.0,
+                "Loan Type": "Personal Loan",
+                "Status": "Closed"
+            },
+            {
+                "Bank": "FEDERAL BANK",
+                "Loan Sanctioned (INR)": 70000.0,
+                "Loan Type": "Personal Loan",
+                "Status": "Closed"
+            },
+            {
+                "Bank": "HDFC BANK",
+                "Loan Sanctioned (INR)": 301972.0,
+                "Loan Type": "Personal Loan",
+                "Status": "Closed"
+            },
+            {
+                "Bank": "KOTAK BANK",
+                "Loan Sanctioned (INR)": 201862.0,
+                "Loan Type": "Personal Loan",
+                "Status": "Closed"
+            },
+            {
+                "Bank": "MANAPPURAM",
+                "Loan Sanctioned (INR)": 610.0,
+                "Loan Type": "Personal Loan",
+                "Status": "Closed"
+            },
+            {
+                "Bank": "BAJAJ FIN LTD",
+                "Loan Sanctioned (INR)": 33800.0,
+                "Loan Type": "Two wheeler Loan",
+                "Status": "Closed"
+            }
+        ]
+    },
+    {
+        "Loan Appraisal Scorecard": [
+            {
+                "Metric": "CIBIL Score",
+                "Value": 20.89
+            },
+            {
+                "Metric": "Repayment History",
+                "Value": 15.0
+            },
+            {
+                "Metric": "Enquiry Frequency",
+                "Value": 4.0
+            },
+            {
+                "Metric": "Credit Mix",
+                "Value": 10.0
+            },
+            {
+                "Metric": "Has Secured Loan",
+                "Value": 10.0
+            }
+        ]
+    }
+]

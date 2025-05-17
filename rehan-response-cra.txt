@@ -1,0 +1,355 @@
+[
+    {
+        "credit_score": "771",
+        "dob": "1999-11-15",
+        "gender": "male",
+        "mobile": "8962488617",
+        "name": "REHAN SHAIKH",
+        "pan": "NLIPS8406N"
+    },
+    {
+        "Credit Facilities Overview": [
+            {
+                "Bank": "AXIO",
+                "Loan Sanctioned (INR)": 7000.0,
+                "Loan Type": "Consumer Loan",
+                "Status": "Active"
+            },
+            {
+                "Bank": "IDFC FIRST BANK",
+                "Loan Sanctioned (INR)": 90000.0,
+                "Loan Type": "Consumer Loan",
+                "Status": "Active"
+            },
+            {
+                "Bank": "KARUR VYSYA",
+                "Loan Sanctioned (INR)": 28000.0,
+                "Loan Type": "Consumer Loan",
+                "Status": "Active"
+            },
+            {
+                "Bank": "HDFC BANK",
+                "Loan Sanctioned (INR)": 23378.0,
+                "Loan Type": "Credit Card",
+                "Status": "Active"
+            },
+            {
+                "Bank": "ICICI BANK",
+                "Loan Sanctioned (INR)": 33331.0,
+                "Loan Type": "Credit Card",
+                "Status": "Active"
+            },
+            {
+                "Bank": "SBI CARD",
+                "Loan Sanctioned (INR)": 9671.0,
+                "Loan Type": "Credit Card",
+                "Status": "Active"
+            },
+            {
+                "Bank": "YES BANK",
+                "Loan Sanctioned (INR)": 12378.0,
+                "Loan Type": "Credit Card",
+                "Status": "Active"
+            }
+        ]
+    },
+    {
+        "Enquiry Details (Past 6 Months)": [
+            {
+                "Amount(INR)": "2000000",
+                "Date": "2024-12-16",
+                "Institution": "TCL",
+                "Purpose": "PERSONAL LOAN"
+            },
+            {
+                "Amount(INR)": "100000",
+                "Date": "2024-11-24",
+                "Institution": "ADITYA BIRLA F L",
+                "Purpose": "PERSONAL LOAN"
+            },
+            {
+                "Amount(INR)": "1000",
+                "Date": "2024-11-12",
+                "Institution": "HDFC BANK",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "1000",
+                "Date": "2024-11-11",
+                "Institution": "HDFC BANK",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "10000",
+                "Date": "2024-11-09",
+                "Institution": "AXIS BANK",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "2000",
+                "Date": "2024-11-07",
+                "Institution": "YES BANK",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "20000",
+                "Date": "2024-11-06",
+                "Institution": "IDFC FIRST BANK",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "2000",
+                "Date": "2024-10-23",
+                "Institution": "YES BANK",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "20000",
+                "Date": "2024-08-19",
+                "Institution": "IDFC FIRST BANK",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "20000",
+                "Date": "2024-07-22",
+                "Institution": "IDFC FIRST BANK",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "1000",
+                "Date": "2024-07-20",
+                "Institution": "HDFC BANK",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "1000",
+                "Date": "2024-07-09",
+                "Institution": "HDFC BANK",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "100",
+                "Date": "2024-06-03",
+                "Institution": "AU SFB",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "200000",
+                "Date": "2024-03-20",
+                "Institution": "EARLYSALARY",
+                "Purpose": "PERSONAL LOAN"
+            },
+            {
+                "Amount(INR)": "50000",
+                "Date": "2024-03-09",
+                "Institution": "DMIFINANCE",
+                "Purpose": "PERSONAL LOAN"
+            },
+            {
+                "Amount(INR)": "100000",
+                "Date": "2024-02-29",
+                "Institution": "ICICI BANK",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "20000",
+                "Date": "2023-12-26",
+                "Institution": "IDFC FIRST BANK",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "50000",
+                "Date": "2023-12-22",
+                "Institution": "KOTAK BANK",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "10000",
+                "Date": "2023-11-03",
+                "Institution": "SBI CARD",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "200000",
+                "Date": "2023-10-16",
+                "Institution": "EARLYSALARY",
+                "Purpose": "PERSONAL LOAN"
+            },
+            {
+                "Amount(INR)": "1000",
+                "Date": "2023-10-16",
+                "Institution": "RBL BANK",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "1000",
+                "Date": "2023-09-21",
+                "Institution": "HDFC BANK",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "2000",
+                "Date": "2023-09-17",
+                "Institution": "YES BANK",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "10000",
+                "Date": "2023-09-03",
+                "Institution": "HERO FINCORP",
+                "Purpose": "PERSONAL LOAN"
+            },
+            {
+                "Amount(INR)": "20000",
+                "Date": "2023-08-26",
+                "Institution": "IDFC FIRST BANK",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "1000",
+                "Date": "2023-08-22",
+                "Institution": "HDFC BANK",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "1000",
+                "Date": "2023-08-03",
+                "Institution": "HDFC BANK",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "10000",
+                "Date": "2023-07-29",
+                "Institution": "AXIS BANK",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "20000",
+                "Date": "2023-07-28",
+                "Institution": "IDFC FIRST BANK",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "10000",
+                "Date": "2022-09-24",
+                "Institution": "AXIS BANK",
+                "Purpose": "CREDIT CARD"
+            },
+            {
+                "Amount(INR)": "1",
+                "Date": "2022-09-22",
+                "Institution": "PAYUFINAN",
+                "Purpose": "PERSONAL LOAN"
+            },
+            {
+                "Amount(INR)": "50000",
+                "Date": "2022-09-05",
+                "Institution": "NAHAR",
+                "Purpose": "CONSUMER LOAN"
+            },
+            {
+                "Amount(INR)": "4000",
+                "Date": "2022-07-20",
+                "Institution": "SI CREVA CAPITAL",
+                "Purpose": "PERSONAL LOAN"
+            },
+            {
+                "Amount(INR)": "25000",
+                "Date": "2022-07-10",
+                "Institution": "BAJAJ FIN LTD",
+                "Purpose": "PERSONAL LOAN"
+            },
+            {
+                "Amount(INR)": "60000",
+                "Date": "2022-07-03",
+                "Institution": "AXIS BANK",
+                "Purpose": "PERSONAL LOAN"
+            },
+            {
+                "Amount(INR)": "5000",
+                "Date": "2022-07-03",
+                "Institution": "CHAIRIDSPL",
+                "Purpose": "PERSONAL LOAN"
+            },
+            {
+                "Amount(INR)": "1",
+                "Date": "2022-07-03",
+                "Institution": "PAYUFINAN",
+                "Purpose": "PERSONAL LOAN"
+            }
+        ]
+    },
+    {
+        "Secured Loans & Collateral Esmate": []
+    },
+    {
+        "Closed Loan Accounts (Sample Highlights)": [
+            {
+                "Bank": "KOTAK BANK",
+                "Loan Sanctioned (INR)": 13028.0,
+                "Loan Type": "Consumer Loan",
+                "Status": "Closed"
+            },
+            {
+                "Bank": "ICICI BANK",
+                "Loan Sanctioned (INR)": 0.0,
+                "Loan Type": "Overdraft",
+                "Status": "Closed"
+            },
+            {
+                "Bank": "HERO FINCORP",
+                "Loan Sanctioned (INR)": 10000.0,
+                "Loan Type": "Personal Loan",
+                "Status": "Closed"
+            },
+            {
+                "Bank": "IDFC FIRST BANK",
+                "Loan Sanctioned (INR)": 32606.0,
+                "Loan Type": "Personal Loan",
+                "Status": "Closed"
+            },
+            {
+                "Bank": "SI CREVA CAPITAL",
+                "Loan Sanctioned (INR)": 4140.0,
+                "Loan Type": "Personal Loan",
+                "Status": "Closed"
+            },
+            {
+                "Bank": "ADITYA BIRLA F L",
+                "Loan Sanctioned (INR)": 9000.0,
+                "Loan Type": "other",
+                "Status": "Closed"
+            },
+            {
+                "Bank": "TRANSACTREE",
+                "Loan Sanctioned (INR)": 10400.0,
+                "Loan Type": "other",
+                "Status": "Closed"
+            }
+        ]
+    },
+    {
+        "Loan Appraisal Scorecard": [
+            {
+                "Metric": "CIBIL Score",
+                "Value": 21.42
+            },
+            {
+                "Metric": "Repayment History",
+                "Value": 25.0
+            },
+            {
+                "Metric": "Enquiry Frequency",
+                "Value": 2.0
+            },
+            {
+                "Metric": "Credit Mix",
+                "Value": 5.0
+            },
+            {
+                "Metric": "Has Secured Loan",
+                "Value": 5.0
+            }
+        ]
+    }
+]

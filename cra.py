@@ -70,10 +70,38 @@ def credit_report():
 
         # ------------------------ Loan Appraisal Scorecard ------------------------
 
-        from loan_appraisal_scorecard import loan_appraisal_dcorecard
-        params = loan_appraisal_dcorecard(json_data)
-        
-        return str(sum(params.values()))
+        from loan_appraisal_scorecard import loan_appraisal_scorecard
+        params = loan_appraisal_scorecard(json_data)
+        df_scorecard = pd.DataFrame(list(params.items()), columns= ['Metric', 'Value'])
+        scorecard = df_scorecard.to_dict(orient='records')
+
+        # ------------------------ Craete PDF ------------------------
+
+        # from create_pdf import create_pdf_with_reportlab
+
+        # op = create_pdf_with_reportlab([
+        #     ("Credit Facilities Overview", df_active_loans, "This table contains active loans."),
+        #     (" Enquiry Details (Past 6 Months) ", df_enq_data, "This table shows enquiries by customer."),
+        #     ("Secured Loans & Collateral Esmate ", df_sec_loan_data, "This table shows secured loans."),
+        #     ("Closed Loan Accounts (Sample Highlights) ", df_closed_loans, "Over 60 gold loans were historically opened and closed , mostly timely and smooth closure, reflecting short-term liquidity use. "),
+        #     ("Loan Appraisal Scorecard", df_scorecard, "This table shows enquiries by customer.")
+        # ])
+
+        # from pdf_fomat import generate_credit_report_pdf
+
+        # op = generate_credit_report_pdf('credit-report.pdf',df_active_loans,df_enq_data,None,df_sec_loan_data,df_closed_loans,df_scorecard)
+        print('Details', details)
+        print('enq_data', enq_data)
+        print('active_loans',active_loans)
+        print('secured_loans',sec_loan_data[1])
+        print('closed_loans',closed_loans)
+        print('scorecard',df_scorecard)
+
+        json_data = json.dumps([{"Personal Information":details}, {"Credit Facilities Overview":active_loans}, {"Enquiry Details (Past 6 Months)":enq_data}, {"Secured Loans & Collateral Esmate": sec_loan_data[1]}, {"Closed Loan Accounts":closed_loans}, {"Loan Appraisal Scorecard":scorecard}])
+        print(json_data)
+        from export_pdf import export_to_pdf
+        pdf_op = export_to_pdf(json_data)
+        return 'Data exported to PDF successfully'
 
     except Exception as e:
         return jsonify({
